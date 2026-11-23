@@ -15,3 +15,8 @@ class MaterialCreate(BaseModel):
             raise ValueError("Название не должно быть пустым")
 
         return title
+    
+class MaterialRead(MaterialCreate):
+    id: int
+    created_at: str
+    updated_at: str
